@@ -1,4 +1,4 @@
 *log
-node_modules/
-package.json
-package-lock.json
+swiet/node_modules/
+swiet/package.json
+swiet/package-lock.json
