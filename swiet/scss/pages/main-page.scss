@@ -126,6 +126,15 @@
                     height: 321px;
                     
                 }
+                & .trand-1{
+                    background: url('../img/cards/Layer%2085.png') no-repeat center;
+                }
+                & .trand-2{
+                    background: url('../img/cards/Layer%2086.png') no-repeat center;
+                }
+                & .trand-3{
+                    background: url('../img/cards/Layer%2087.png') no-repeat center;
+                }
             }
             & .card-medium{
                 & .add{
@@ -218,7 +227,27 @@
                     font-family: "Panton SemiBold",sans-serif;
                     }
                 }
+            
         }
+        & .hover-effect{
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            &:hover{
+                    opacity: 1;
+            }
+            & .img-full{
+                
+            }
+            }
     }
 }
 

@@ -3105,6 +3105,7 @@ body {
   background-color: #0044a9;
   color: #fff;
   border-radius: 16px;
+  text-align: center;
 }
 
 @media (max-width: 979px) {
@@ -3562,6 +3563,15 @@ body {
 .main__inner .trands .card__body {
   height: 321px;
 }
+.main__inner .trands .card .trand-1 {
+  background: url("../img/cards/Layer%2085.png") no-repeat center;
+}
+.main__inner .trands .card .trand-2 {
+  background: url("../img/cards/Layer%2086.png") no-repeat center;
+}
+.main__inner .trands .card .trand-3 {
+  background: url("../img/cards/Layer%2087.png") no-repeat center;
+}
 .main__inner .trands .card-medium .add {
   width: 200px;
   -ms-flex-item-align: start;
@@ -3658,6 +3668,31 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-family: "Panton SemiBold",sans-serif;
+}
+.main__inner .hover-effect {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+.main__inner .hover-effect:hover {
+  opacity: 1;
 }
 
 .contacts {
