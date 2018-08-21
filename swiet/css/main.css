@@ -3208,6 +3208,9 @@ body {
   .card-medium {
     width: 33%;
   }
+  .card-medium .card__body {
+    padding: 20px;
+  }
 }
 @media (max-width: 766px) {
   .card-medium {
@@ -3613,6 +3616,18 @@ body {
 }
 .main__inner .feedback form button:last-child {
   margin-right: 0;
+}
+@media (max-width: 979px) {
+  .main__inner .feedback form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__inner .feedback form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 .main__inner .content-part .mark {
   display: block;
