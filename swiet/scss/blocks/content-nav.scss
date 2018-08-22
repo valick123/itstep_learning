@@ -1,4 +1,5 @@
-.block-header{
+.block-header,
+.block-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,5 +19,27 @@
         line-height: 12px;
         letter-spacing: 0.2em;  
         color: $primary-color;
+    }
+    & .nav-part{
+        display: flex;
+        align-items: center;
+        & .count{
+            margin-right: 20px;
+        }
+        & .disc,
+        .count{
+            font-size: 13px;
+            line-height: 30px;
+            letter-spacing: 0.025em;
+        }
+    }
+}
+.page-header{
+    flex-basis: 100%;
+    & .page-title{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: 0.025em;
+        margin-bottom: 75px;
     }
 }

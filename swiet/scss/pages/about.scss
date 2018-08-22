@@ -1,0 +1,40 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    & .content{
+        padding: 40px 0;
+        & p{
+            margin: 0;
+        }
+    }
+    & .pic-banner{
+        & img{
+            width: 100%;
+        }
+        & .gallery{
+            display: flex;
+            justify-content: center;
+            
+        }        
+    }
+    @include desctop{
+        & .content{
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        & .gallery{
+            & img{
+                flex-grow: 1;
+            }
+        }
+    }
+    @include tabletAndMobile{
+        & .gallery{
+            flex-wrap: wrap;
+            & img{
+                flex-grow: 0;
+            }
+        }
+    }
+}
