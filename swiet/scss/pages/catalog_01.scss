@@ -1,0 +1,8 @@
+.catalog{   
+     & .main__inner{
+         flex-direction: row;
+         & .catalog-part{
+             flex-grow: 1;
+         }
+     }    
+}

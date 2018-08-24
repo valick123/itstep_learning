@@ -1,0 +1,230 @@
+.sidebar{
+        & .block-header{
+            padding: 20px 0;
+            & .content-title{
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.025em;
+            }
+        }
+        & .product-form{
+        & ul{
+            list-style: none;
+            padding: 0;
+        }
+        & select{
+           margin-bottom: 25px; 
+           width: 100%;
+        }
+        & .checkbox-ico{
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                border:1px solid $border-color;
+            } 
+        & input[type="checkbox"]{
+                visibility: hidden;
+                position: relative;
+                width: 0;
+                height: 0;
+                &::before{
+                    
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid $primary-color;
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    top: -14px;
+                    left: -16px;
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    border: 1px solid $primary-color;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    top: -12px;
+                    left: -11px;
+                    transform: rotate(45deg);
+                }
+            }
+        & input[type="checkbox"]:checked{
+                visibility: hidden;
+                position: relative;
+                width: 0;
+                height: 0;
+                &::before{
+                    visibility: visible;
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    top: -14px;
+                    left: -16px;
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    visibility: visible;
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    top: -12px;
+                    left: -11px;
+                    transform: rotate(45deg);
+                }
+            }
+        & .item{
+        border:1px solid $border-color;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        & .btn{
+            width: 100%;
+            border-color:darken($border-color,20) ;
+        }
+    }
+        & .catigories{
+        &-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            
+        }
+    }
+        & .barnd{
+            
+            }
+        & .sizes{
+            &-list{
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+                justify-content: space-between;
+                & li{
+                    flex-basis: 33.333333%;
+                    
+                }
+                
+            } 
+        }
+        & .color{
+            & .color-type{
+                width: 36px;
+                height: 12px;
+                margin: 0;
+                margin-left: 10px;
+                border:1px solid $border-color;
+            }
+            & .color-1{
+                background-color: $primary-color;
+            }
+            & .color-2{
+                background-color: red;
+            }
+            & .color-3{
+                background-color: green;
+            }
+            & .color-4{
+                background-color: orange;
+            }
+            & .color-5{
+                background-color: purple;
+            }
+            & .color-6{
+                background-color: darkblue;
+            }
+            & input[type="checkbox"]{
+                
+                &::before{
+                    
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    top: -14px;
+                    left: -63px;
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    top: -12px;
+                    left: -59px;
+                    transform: rotate(45deg);
+                }
+            }
+            & inpup[type="checkbox"]:checked{
+                &::before{
+                    visibility: visible;
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    top: -14px;
+                    left: -63px;
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    visibility: visible;
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    border: 2px solid $primary-color;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    top: -12px;
+                    left: -59px;
+                    transform: rotate(45deg);
+                }
+            }
+         }
+        & .style{
+            
+        }
+        & input[type="reset"]{
+            width: 100%;
+        }
+}
+    @include desctop{
+        width: 20%;
+    }
+}

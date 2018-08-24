@@ -6,7 +6,6 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-//        justify-content: center;
         &-pic{
             width: 96px;
             border-radius: 50%;
@@ -26,11 +25,22 @@
         }
     }
     & blockquote{
-            flex-basis: 500px;
             margin: 0;
             line-height: 30px;
             letter-spacing: 0.025em;
             font-family:"Myriad Pro",sans-serif;
             font-weight: bold;
         }
+    @include desctop{
+        & blockquote{
+            flex-basis: 500px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+        & .author{
+            margin-bottom: 15px;
+        }
+        
+    }
 }

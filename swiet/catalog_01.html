@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>catalog_01</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="site">
+        <header class="header">               
+                    <div class="header__top">
+                       <div class="container">
+                       <div class="top__inner">
+                        <div class="logo">
+                           <a href="#"><img src="img/logo.png" alt=""></a>                            
+                        </div>
+                        <div class="filter">
+                            <ul class="catigories">
+                                <li><a href="#">Женщинам</a></li>
+                                <li><a href="#">Мужчинам</a></li>
+                                <li><a href="#">Детям</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn currency"><i class="flag currency-ico"></i>RUB</button>
+                            <button class="btn signin">Войти</button>
+                            <button class="btn"><i class="flag cart-ico"></i>Корзина</button>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="header__bottom">
+                        <div class="container">
+                            <div class="bottom__inner">
+                                <ul class="menu">
+                                    <li><a href="#">Новинки</a></li>
+                                    <li><a href="#">Стиль Жизни</a></li>
+                                    <li><a href="#">Одежда</a></li>
+                                    <li><a href="#">Обувь</a></li>
+                                    <li><a href="#">Бренды</a></li>
+                                    <li><a href="#">Премиум</a></li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">Красота</a></li>
+                                    <li><a href="#">Распродажа</a></li>
+                                </ul>
+                                <form action="" class="search">
+                                    <input type="search" placeholder="Поиск">
+                                    <button class="btn search-btn"><i class="flag"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+        </header>
+        <main class="main">
+        <div class="catalog">
+            
+            <div class="container">
+                <div class="main__inner">
+                    <div class="sidebar">
+                        <form action="get" class="product-form">
+                            <div class="catigories item">
+                              <div class="block-header">
+                                  <h2 class="content-title">Категория</h2>
+                              </div>
+                               <ul class="catigories-list">
+                                   <li>
+                                      <label for="cat-item-1" class="checkbox-ico"></label>
+                                       <input type="checkbox" name="catigories" id="cat-item-1" >
+                                <label for="cat-item-1">Платья и сарафаны  </label>
+                                  
+                                   </li>
+                                   <li><label for="cat-item-2" class="checkbox-ico"></label>
+                                       <input type="checkbox" name="catigories" id="cat-item-2">
+                                <label for="cat-item-2">Верхняя одежда</label>
+                                   </li>
+                                   <li><label for="cat-item-3" class="checkbox-ico"></label>
+                                       <input type="checkbox" name="catigories" id="cat-item-3">
+                                <label for="cat-item-3">Пляжная одежда</label>
+                                   </li>
+                                   <li><label for="cat-item-4" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-4">
+                                <label for="cat-item-4">Блейзеры</label> 
+                                   </li>
+                                   <li><label for="cat-item-5" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-5">
+                                <label for="cat-item-5">Кардиганы</label> 
+                                   </li>
+                                   <li><label for="cat-item-6" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-6">
+                                <label for="cat-item-6">Пальто</label> 
+                                   </li>
+                                   <li><label for="cat-item-7" class="checkbox-ico"></label>
+                                     <input type="checkbox" name="catigories" id="cat-item-7">
+                                <label for="cat-item-7">Платья</label>  
+                                   </li>
+                                   <li><label for="cat-item-8" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-8">
+                                <label for="cat-item-8">Худи</label> 
+                                   </li>
+                                   <li><label for="cat-item-9" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-9">
+                                <label for="cat-item-9">Куртки</label> 
+                                   </li>
+                                   <li><label for="cat-item-10" class="checkbox-ico"></label>
+                                     <input type="checkbox" name="catigories" id="cat-item-10">
+                                <label for="cat-item-10">Джинсы</label>  
+                                   </li>
+                                   <li><label for="cat-item-11" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-11">
+                                <label for="cat-item-11">Джемперы</label>  
+                                   </li>
+                                   <li><label for="cat-item-12" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-12">
+                                <label for="cat-item-12">Женское белье</label> 
+                                   </li>
+                                   <li><label for="cat-item-13" class="checkbox-ico"></label>
+                                      <input type="checkbox" name="catigories" id="cat-item-13">
+                                <label for="cat-item-13">Ночная одежда</label> 
+                                   </li>
+                               </ul>
+                               <button class="btn">more</button>
+                            </div>
+                            <div class="brand item">
+                              <div class="block-header">
+                                  <h2 class="content-title">Бренд</h2>
+                              </div>                                
+                            </div>
+                            <div class="sizes item">
+                                <div class="block-header">
+                                  <h2 class="content-title">Размер</h2>
+                              </div> 
+                                <ul class="sizes-list">
+                                    <li>
+                                        <label for="size-item-1" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-1">
+                                        <label for="size-item-1">38</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-2" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-2">
+                                        <label for="size-item-2">40</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-3" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-3">
+                                        <label for="size-item-3">42</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-4" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-4">
+                                        <label for="size-item-4">44</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-5" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-5">
+                                        <label for="size-item-5">46</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-6" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-6">
+                                        <label for="size-item-6">48</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-7" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-7">
+                                        <label for="size-item-7">50</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-8" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-8">
+                                        <label for="size-item-8">52</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-9" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-9">
+                                        <label for="size-item-9">54</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-10" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-10">
+                                        <label for="size-item-10">56</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-11" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-11">
+                                        <label for="size-item-11">58</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-12" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-12">
+                                        <label for="size-item-12">60</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-13" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-13">
+                                        <label for="size-item-13">62</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-14" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-14">
+                                        <label for="size-item-14">64</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-15" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-15">
+                                        <label for="size-item-15">66</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-16" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-16">
+                                        <label for="size-item-16">68</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-17" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-17">
+                                        <label for="size-item-17">70</label>
+                                    </li>
+                                    <li>
+                                        <label for="size-item-18" class="checkbox-ico"></label>
+                                        <input type="checkbox" name="size" id="size-item-18">
+                                        <label for="size-item-18">72</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="color item">
+                                <div class="block-header">
+                                  <h2 class="content-title">Цвет</h2>
+                              </div> 
+                                <ul class="color-list">
+                                    <li>
+                                        <label for="color-item-1" class="checkbox-ico"></label>
+                                        <label for="color-item-1" class="color-type color-1" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-1">
+                                        <label for="color-item-1">Синий</label>
+                                    </li>
+                                    <li>
+                                        <label for="color-item-2" class="checkbox-ico"></label>
+                                        <label for="color-item-2" class="color-type color-2" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-2">
+                                        <label for="color-item-2">Красный</label>
+                                    </li>
+                                    <li>
+                                        <label for="color-item-3" class="checkbox-ico"></label>
+                                        <label for="color-item-3" class="color-type color-3" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-3">
+                                        <label for="color-item-3">Зеленый</label>
+                                    </li>
+                                    <li>
+                                        <label for="color-item-4" class="checkbox-ico"></label>
+                                        <label for="color-item-4" class="color-type color-4" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-4">
+                                        <label for="color-item-4">Оранжевый</label>
+                                    </li>
+                                    <li>
+                                        <label for="color-item-5" class="checkbox-ico"></label>
+                                        <label for="color-item-5" class="color-type color-5" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-5">
+                                        <label for="color-item-5">Фиолетовый</label>
+                                    </li>
+                                    <li>
+                                        <label for="color-item-6" class="checkbox-ico"></label>
+                                        <label for="color-item-6" class="color-type color-6" type="checkbox"></label>
+                                        <input type="checkbox" id="color-item-6">
+                                        <label for="color-item-6">Темно-синий</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price item">
+                                <div class="block-header">
+                                  <h2 class="content-title">Цена</h2>
+                              </div> 
+                                <input type="range" min="0" max="400000" step="100" multiple>
+                            </div>
+                            <div class="style item">                                
+                                <div class="block-header">
+                                  <h2 class="content-title">Стиль</h2>
+                              </div> 
+                              <select name="style" id="">
+                                  <option value="ultra">Ультрамодный</option>
+                              </select>
+                            </div>
+                            <div class="collection item">                                
+                                <div class="block-header">
+                                  <h2 class="content-title">Коллекция</h2>
+                              </div>                                 
+                            </div>
+                            <div class="material item">                                
+                                <div class="block-header">
+                                  <h2 class="content-title">Материал</h2>
+                              </div>
+                              <ul class="material-list">
+                                  <li>
+                                      <label for="mater-item-1" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-1">
+                                      <label for="mater-item-1">Акрил</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-2" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-2">
+                                      <label for="mater-item-2">Вискоза</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-3" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-3">
+                                      <label for="mater-item-3">Дерево</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-4" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-4">
+                                      <label for="mater-item-4">Искуственная замша</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-5" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-5">
+                                      <label for="mater-item-5">Искусственная кожа</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-6" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-6">
+                                      <label for="mater-item-6">Гусиный пух</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-7" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-7">
+                                      <label for="mater-item-7">Микрофибра</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-8" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-8">
+                                      <label for="mater-item-8">Натуральная замша</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-9" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-9">
+                                      <label for="mater-item-9">Полиамид</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-10" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-10">
+                                      <label for="mater-item-10">Полимер</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-11" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-11">
+                                      <label for="mater-item-11">Лён</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-12" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-12">
+                                      <label for="mater-item-12">Хлопок</label>
+                                  </li>
+                                  <li>
+                                      <label for="mater-item-13" class="checkbox-ico"></label>
+                                      <input type="checkbox" id="mater-item-13">
+                                      <label for="mater-item-13">Шёлк</label>
+                                  </li>
+                              </ul> 
+                            </div>
+                            <input type="reset" value="Сбросить все фильтры" class="btn">
+                        </form>
+                    </div>
+                    <div class="catalog-part">text</div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">                
+                   <div class="footer__top">
+                     <div class="container">
+                      <div class="top__inner">
+                     <div class="card">
+                         <div class="card__inner">
+                             <div class="card__header">
+                                 <h5 class="card__title">Вопросы</h5>
+                             </div>
+                             <div class="card__body">
+                                 <ul class="info-list">
+                                     <li><a href="#">Как оформить заказ</a></li>
+                                     <li><a href="#">Условия доставки</a></li>
+                                     <li><a href="#">Возврат и обмен</a></li>
+                                     <li><a href="#">Оплата</a></li>
+                                     <li><a href="#">Оферта</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <div class="card__inner">
+                             <div class="card__header">
+                                 <h5 class="card__title">В наличии</h5>
+                             </div>
+                             <div class="card__body">
+                                 <ul class="info-list">
+                                     <li><a href="#">Женщинам</a></li>
+                                     <li><a href="#">Мужчинам</a></li>
+                                     <li><a href="#">Детям</a></li>
+                                     <li><a href="#">Аксессуары</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <div class="card__inner">
+                             <div class="card__header">
+                                 <h5 class="card__title">Другое</h5>
+                             </div>
+                             <div class="card__body">
+                                 <ul class="info-list">
+                                     <li><a href="#">Вакансии</a></li>
+                                     <li><a href="#">О компании</a></li>
+                                     <li><a href="#">Партнерская программа</a></li>
+                                     <li><a href="#">Инвесторам</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <div class="card__inner">
+                             <div class="card__header">
+                                 <h5 class="card__title">Мы в социальных сетях</h5>
+                             </div>
+                             <div class="card__body">
+                                 <ul class="info-list">
+                                     <li><a href="#">Фейсбук</a></li>
+                                     <li><a href="#">Вконтакте</a></li>
+                                     <li><a href="#">Ютуб</a></li>
+                                     <li><a href="#">Одноклассники</a></li>
+                                     <li><a href="#">Инстаграм</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <div class="card__inner">
+                             <div class="card__header">
+                                 <h5 class="card__title">Способы оплаты</h5>
+                             </div>
+                             <div class="card__body">
+                                 <ul class="paiments">
+                                     <li><a class="qivi" href="#"></a></li>
+                                     <li><a class="yandmon" href="#"></a></li>
+                                     <li><a class="mcvisa" href="#"></a></li>
+                                     <li><a class="sber" href="#"></a></li>
+                                     <li><a class="alphab" href="#"></a></li>
+                                     <li><a class="webm" href="#"></a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container">
+                        <div class="bottom__inner">
+                            <div class="left_part">
+                            <span class="copyright">© 2010–2015  ООО «Swiet»</span>
+                            <a href="#" class="mobswith">Мобильная версия</a>
+                            </div>
+                            <div class="right-part">
+                                <img src="img/Logo_BBBro_Bureau.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</body>
+</html>

@@ -14,10 +14,19 @@ html,body{
 			flex-grow: 1;
             z-index: 2;
             &__inner{
+                display: flex;
                 height: 100%;
+                padding: 39px 0 100px 0;
             }
 		}
 	}
+    @include mobile{
+        & .main{
+         &__inner{
+            padding: 25px 0 40px 0;
+        }   
+        }
+    }
 }
 body {
     
