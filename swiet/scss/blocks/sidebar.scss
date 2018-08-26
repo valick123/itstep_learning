@@ -1,4 +1,5 @@
 .sidebar{
+
         & .block-header{
             padding: 20px 0;
             & .content-title{
@@ -220,11 +221,36 @@
         & .style{
             
         }
-        & input[type="reset"]{
+        & .reset{
             width: 100%;
+            text-align: center;
+            padding: 7px 0;
+    
+        }
+        & .subscribe-field{
+            padding: 20px 24px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        & .email-field{
+            display: flex;
+            width: 100%;
+            & input{
+                flex-grow: 1;
+                border: 1px solid $border-color;
+                background-color: transparent;
+                padding: 0 10px;
+            }
+            & .search-btn{
+                min-width: 30px;
+                background: url('../img/sidebar/subscribe-ico.png') no-repeat center;
+            }
         }
 }
     @include desctop{
-        width: 20%;
+        
+    }
+    @include tabletAndMobile{
+        margin-bottom: 20px;
     }
 }

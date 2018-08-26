@@ -1,8 +1,33 @@
 .catalog{   
      & .main__inner{
-         flex-direction: row;
-         & .catalog-part{
-             flex-grow: 1;
+         
+        flex-direction: row;
+         & .catalog-items{
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+             
          }
-     }    
+    }
+    @include desctop{
+        & .card{
+                 &:nth-last-child(-n+5){
+                     margin-bottom: 0;
+                 }
+             }
+    }
+    @include tablet{
+        & .card{
+                 &:nth-last-child(-n+4){
+                     margin-bottom: 0;
+                 }
+             }
+    }
+    @include mobile{
+        & .card{
+                 &:nth-last-child(-n+1){
+                     margin-bottom: 0;
+                 }
+             }
+    }
 }

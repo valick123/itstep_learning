@@ -1,13 +1,6 @@
 .main{
     &__inner{
-        
-        
         flex-direction: column;
-        & .card{
-            &__inner{
-                flex-direction: column;
-            }
-        }
         & .clothes{
             width: 100%;
             display: flex;
@@ -93,7 +86,7 @@
                 line-height: 18px;
                 letter-spacing: 0.025em;
                 font-family: 'Myriad Pro',sans-serif;
-                width: 148px;
+//                width: 148px;
             }
             & .price{
                position: absolute;
@@ -115,17 +108,13 @@
                 line-height: 18px;
                 letter-spacing: 0.025em;
                 bottom: 36px;
-                width: 148px;
                 font-family: "Panton SemiBold",sans-serif;
             }
             }
         }
         & .trands{
             & .card{
-                &__body{
                     height: 321px;
-                    
-                }
                 & .trand-1{
                     background: url('../img/cards/Layer%2085.png') no-repeat center;
                 }
@@ -173,69 +162,6 @@
                     }
                 }
             }
-        }
-        & .content-part{
-            & .mark{
-                display: block;
-                text-decoration: none;
-                margin-bottom: 20px;
-                font-size: 15px;
-                letter-spacing: 0.05em;
-                color: $primary-color;
-                font-family: 'Myriad Pro',sans-serif;
-            }
-            & p{
-                margin-bottom: 29px;
-                font-size: 15px;
-                line-height: 24px;
-                letter-spacing: 0.025em;
-                color: $primary-text-color;
-            }
-            & .price{
-               display: block; 
-                font-family: "Myriad Pro",sans-serif;
-                font-size: 15px;
-                letter-spacing: 0.05em;
-                color: $secondary-text-color;
-            }
-            & .new{
-                &::before{
-                    content: 'новинка';
-                    position: absolute;
-                    width: 54px;
-                    height: 15px;
-                    background-color: $secondary-text-color;
-                    top: 10px;
-                    left: 10px;
-                    border-radius: 5px;
-                    font-size: 9px;
-                    letter-spacing: 0.05em;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #fff;
-                    font-family: "Panton SemiBold",sans-serif;
-                }
-                
-            }
-            & .sale{
-                    &::before{
-                    content: 'акция';
-                    position: absolute;
-                    width: 40px;
-                    height: 15px;
-                    background-color: #ff9c00;
-                    top: 10px;
-                    left: 10px;
-                    border-radius: 5px;
-                    font-size: 9px;
-                    letter-spacing: 0.05em;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #fff;
-                    font-family: "Panton SemiBold",sans-serif;
-                    }
-                }
-            
         }
         & .hover-effect{
             height: 100%;
