@@ -35,6 +35,7 @@
     }
 }
 .page-header{
+    display: flex;
     flex-basis: 100%;
     & .page-title{
         font-size: 48px;

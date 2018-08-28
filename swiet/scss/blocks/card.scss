@@ -34,6 +34,7 @@
         & .content-part{
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             width: 100%;
             & .mark{
                 display: block;
@@ -59,6 +60,8 @@
                 color: $secondary-text-color;
             }
             & .new{
+                width: 0;
+                height: 0;
                 &::before{
                     content: 'новинка';
                     position: absolute;
@@ -78,6 +81,8 @@
                 
             }
             & .sale{
+                width: 0;        
+                height: 0;
                     &::before{
                     content: 'акция';
                     position: absolute;
@@ -143,6 +148,7 @@
 .card-medium{
     @include desctop{
         width: 40%;
+        flex-grow: 1;
     }
     @include tablet{
         width:50%;
@@ -150,7 +156,8 @@
 }
 .card-small{
     @include desctop{
-        width: 20%;
+        min-width: 230px;
+        max-width: 20%;
         & .card{
             &__title{
                 font-size: 24px;

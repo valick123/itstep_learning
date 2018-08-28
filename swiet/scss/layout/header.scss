@@ -62,16 +62,20 @@
             & .menu{
                 display: flex;
                 flex-wrap: wrap;
+                flex-grow: 1;
+                justify-content: space-between;
                 padding: 0;
                 margin: 0;
                 list-style: none;
                 & li{
-                    margin-right: 29px;
+                    flex-grow: 1;
+//                    margin-right: 29px;
                     &:last-child{
                         margin-right: 0;
                     }
                     & a{
                         font-size: 15px;
+                        padding: 5px;
                         font-family: "Panton",sans-serif;
                         display: block;
                         text-decoration: none;

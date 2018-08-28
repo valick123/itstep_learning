@@ -1,0 +1,103 @@
+.page-switcher{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    & .page-swither-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    & li{
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+        & a{
+        display: block;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            padding: 10px 0;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+            &:hover{
+                background-color: $primary-color;
+                color:#fff;
+            }
+    }
+    }
+    & .first-page{
+        padding-right: 40px;
+        position: relative;
+        &::after{
+            content:'...';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-family: "Panton Bold", sans-serif;
+            font-size: 11px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+        }
+    }
+    & .last-page{
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            content:'...';
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-family: "Panton Bold", sans-serif;
+            font-size: 11px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+    & .previous{
+        position: relative;
+        padding: 8px 10px 8px 25px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            border:2px solid $primary-color;
+            border-top: none;
+            border-right: none;
+            left: 11px;
+            top:9px;
+            transform: rotate(45deg)
+        }
+    }
+    & .next{
+        position: relative;
+        padding: 8px 25px 8px 10px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            border:2px solid $primary-color;
+            border-bottom: none;
+            border-left: none;
+            right: 11px;
+            top: 9px;
+            transform: rotate(45deg)
+        }
+    }
+    @include mobile{
+            flex-direction: column;
+        & .page-swither-list{
+            
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+}
