@@ -1,0 +1,23 @@
+.trands{
+    display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 60px;
+    & .card{
+            height: 321px;
+        & .trand-1{
+            background: url('../img/cards/Layer%2085.png') no-repeat center;
+        }
+        & .trand-2{
+            background: url('../img/cards/Layer%2086.png') no-repeat center;
+        }
+        & .trand-3{
+            background: url('../img/cards/Layer%2087.png') no-repeat center;
+        }
+    }
+    & .card-medium{
+        & .add{
+            width: 200px;
+            align-self: flex-start;
+        }
+    }
+}

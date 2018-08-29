@@ -1,0 +1,20 @@
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;    
+    & .card__title{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.025em;
+        font-family: 'Myriad Pro',sans-serif;
+//                width: 148px;
+    }
+    & .price{
+       position: absolute;
+        bottom: 36px;
+    }
+    & .add{
+        position: absolute;
+        bottom: 36px;
+    }
+}

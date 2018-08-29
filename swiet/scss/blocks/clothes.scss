@@ -1,0 +1,28 @@
+.clothes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    & .dress{
+        background: url('../img/cards/dress.png') no-repeat center;
+    }
+    & .boots{
+        background: url('../img/cards/boots.png') no-repeat center;
+    }
+    & .swimsuit{
+        background: url('../img/cards/swimsuit.png') no-repeat center;
+    }
+    & .svitshot{
+        display: flex;
+        justify-content: flex-end;
+        background: url('../img/cards/svitshot.png') no-repeat center;
+    }
+    & .bags{
+        background: url('../img/cards/bags.png') no-repeat center;
+    }
+    & .pigamas{
+        background: url('../img/cards/pigamas.png') no-repeat center;
+    }
+    & .coat{
+        background: url('../img/cards/coat.png') no-repeat center;
+    }
+}

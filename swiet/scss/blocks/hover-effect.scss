@@ -1,0 +1,19 @@
+.hover-effect{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    &:hover{
+            opacity: 1;
+    }
+    & .img-full{
+        
+    }
+    }

@@ -3955,99 +3955,7 @@ body {
   }
 }
 
-.main__inner {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.main__inner .clothes {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.main__inner .clothes .dress {
-  background: url("../img/cards/dress.png") no-repeat center;
-}
-.main__inner .clothes .boots {
-  background: url("../img/cards/boots.png") no-repeat center;
-}
-.main__inner .clothes .swimsuit {
-  background: url("../img/cards/swimsuit.png") no-repeat center;
-}
-.main__inner .clothes .svitshot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background: url("../img/cards/svitshot.png") no-repeat center;
-}
-.main__inner .clothes .bags {
-  background: url("../img/cards/bags.png") no-repeat center;
-}
-.main__inner .clothes .pigamas {
-  background: url("../img/cards/pigamas.png") no-repeat center;
-}
-.main__inner .clothes .coat {
-  background: url("../img/cards/coat.png") no-repeat center;
-}
-.main__inner .brands {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-  padding: 70px 10px;
-  width: 100%;
-}
-.main__inner .brands .item {
-  -ms-flex-preferred-size: 122px;
-      flex-basis: 122px;
-  height: 64px;
-}
-.main__inner .brands .item-1 {
-  background: url("../img/brands-sprite.png") no-repeat 18px 0;
-}
-.main__inner .brands .item-2 {
-  background: url("../img/brands-sprite.png") no-repeat -106px 0;
-}
-.main__inner .brands .item-3 {
-  background: url("../img/brands-sprite.png") no-repeat -231px 0;
-}
-.main__inner .brands .item-4 {
-  background: url("../img/brands-sprite.png") no-repeat -355px 0;
-}
-.main__inner .brands .item-5 {
-  background: url("../img/brands-sprite.png") no-repeat -480px 0;
-}
-.main__inner .brands .item-6 {
-  background: url("../img/brands-sprite.png") no-repeat -606px 0;
-}
-.main__inner .brands .item-7 {
-  background: url("../img/brands-sprite.png") no-repeat -732px 0;
-}
-.main__inner .brands .item-8 {
-  background: url("../img/brands-sprite.png") no-repeat -856px 0;
-}
-.main__inner .brands .item-9 {
-  background: url("../img/brands-sprite.png") no-repeat -982px 0;
-}
-.main__inner .brands .item-10 {
-  background: url("../img/brands-sprite.png") no-repeat -1106px 0;
-}
-.main__inner .popular,
-.main__inner .last,
-.main__inner .trands {
+.last {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4055,24 +3963,10 @@ body {
       flex-wrap: wrap;
   padding-bottom: 60px;
 }
-.main__inner .popular .card__title {
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.025em;
-  font-family: 'Myriad Pro',sans-serif;
-}
-.main__inner .popular .price {
-  position: absolute;
-  bottom: 36px;
-}
-.main__inner .popular .add {
-  position: absolute;
-  bottom: 36px;
-}
-.main__inner .last .card__body {
+.last .card__body {
   height: 320px;
 }
-.main__inner .last .card .card__title {
+.last .card .card__title {
   position: absolute;
   font-size: 15px;
   line-height: 18px;
@@ -4080,24 +3974,57 @@ body {
   bottom: 36px;
   font-family: "Panton SemiBold",sans-serif;
 }
-.main__inner .trands .card {
+
+.trands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.trands .card {
   height: 321px;
 }
-.main__inner .trands .card .trand-1 {
+.trands .card .trand-1 {
   background: url("../img/cards/Layer%2085.png") no-repeat center;
 }
-.main__inner .trands .card .trand-2 {
+.trands .card .trand-2 {
   background: url("../img/cards/Layer%2086.png") no-repeat center;
 }
-.main__inner .trands .card .trand-3 {
+.trands .card .trand-3 {
   background: url("../img/cards/Layer%2087.png") no-repeat center;
 }
-.main__inner .trands .card-medium .add {
+.trands .card-medium .add {
   width: 200px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-.main__inner .feedback {
+
+.popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.popular .card__title {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.025em;
+  font-family: 'Myriad Pro',sans-serif;
+}
+.popular .price {
+  position: absolute;
+  bottom: 36px;
+}
+.popular .add {
+  position: absolute;
+  bottom: 36px;
+}
+
+.feedback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4111,7 +4038,7 @@ body {
       flex-wrap: wrap;
   padding: 0 10px;
 }
-.main__inner .feedback form {
+.feedback form {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -4124,29 +4051,80 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.main__inner .feedback form input {
+.feedback form input {
   width: 426px;
   margin-right: 20px;
 }
-.main__inner .feedback form button {
+.feedback form button {
   margin-right: 20px;
 }
-.main__inner .feedback form button:last-child {
+.feedback form button:last-child {
   margin-right: 0;
 }
 @media (max-width: 979px) {
-  .main__inner .feedback form {
+  .feedback form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .main__inner .feedback form input {
+  .feedback form input {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
-.main__inner .hover-effect {
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 70px 10px;
+  width: 100%;
+}
+.brands .item {
+  -ms-flex-preferred-size: 122px;
+      flex-basis: 122px;
+  height: 64px;
+}
+.brands .item-1 {
+  background: url("../img/brands-sprite.png") no-repeat 18px 0;
+}
+.brands .item-2 {
+  background: url("../img/brands-sprite.png") no-repeat -106px 0;
+}
+.brands .item-3 {
+  background: url("../img/brands-sprite.png") no-repeat -231px 0;
+}
+.brands .item-4 {
+  background: url("../img/brands-sprite.png") no-repeat -355px 0;
+}
+.brands .item-5 {
+  background: url("../img/brands-sprite.png") no-repeat -480px 0;
+}
+.brands .item-6 {
+  background: url("../img/brands-sprite.png") no-repeat -606px 0;
+}
+.brands .item-7 {
+  background: url("../img/brands-sprite.png") no-repeat -732px 0;
+}
+.brands .item-8 {
+  background: url("../img/brands-sprite.png") no-repeat -856px 0;
+}
+.brands .item-9 {
+  background: url("../img/brands-sprite.png") no-repeat -982px 0;
+}
+.brands .item-10 {
+  background: url("../img/brands-sprite.png") no-repeat -1106px 0;
+}
+
+.hover-effect {
   height: 100%;
   width: 100%;
   background-color: #fff;
@@ -4168,8 +4146,51 @@ body {
           align-items: center;
   opacity: 0;
 }
-.main__inner .hover-effect:hover {
+.hover-effect:hover {
   opacity: 1;
+}
+
+.clothes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.clothes .dress {
+  background: url("../img/cards/dress.png") no-repeat center;
+}
+.clothes .boots {
+  background: url("../img/cards/boots.png") no-repeat center;
+}
+.clothes .swimsuit {
+  background: url("../img/cards/swimsuit.png") no-repeat center;
+}
+.clothes .svitshot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("../img/cards/svitshot.png") no-repeat center;
+}
+.clothes .bags {
+  background: url("../img/cards/bags.png") no-repeat center;
+}
+.clothes .pigamas {
+  background: url("../img/cards/pigamas.png") no-repeat center;
+}
+.clothes .coat {
+  background: url("../img/cards/coat.png") no-repeat center;
+}
+
+.main__inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts {

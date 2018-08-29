@@ -1,0 +1,17 @@
+.last{display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    & .card{
+        &__body{
+            height: 320px;
+        }
+        & .card__title{
+        position: absolute;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.025em;
+        bottom: 36px;
+        font-family: "Panton SemiBold",sans-serif;
+    }
+    }
+}

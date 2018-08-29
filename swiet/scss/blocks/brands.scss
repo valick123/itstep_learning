@@ -1,0 +1,43 @@
+.brands{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 70px 10px;
+    width: 100%;
+    & .item{
+        flex-basis: 122px;
+        height: 64px;
+        &-1{
+            background: url('../img/brands-sprite.png') no-repeat 18px 0;
+        }
+        &-2{
+            background: url('../img/brands-sprite.png') no-repeat -106px 0;
+        }
+        &-3{
+            background: url('../img/brands-sprite.png') no-repeat -231px 0;
+        }
+        &-4{
+            background: url('../img/brands-sprite.png') no-repeat -355px 0;
+        }
+        &-5{
+            background: url('../img/brands-sprite.png') no-repeat -480px 0;
+        }
+        &-6{
+            background: url('../img/brands-sprite.png') no-repeat -606px 0;
+        }
+        &-7{
+            background: url('../img/brands-sprite.png') no-repeat -732px 0;
+        }
+        &-8{
+            background: url('../img/brands-sprite.png') no-repeat -856px 0;
+        }
+        &-9{
+            background: url('../img/brands-sprite.png') no-repeat -982px 0;
+        }
+        &-10{
+            background: url('../img/brands-sprite.png') no-repeat -1106px 0;
+        }
+    }
+}

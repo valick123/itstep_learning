@@ -30,9 +30,6 @@
          }
     }
     @include desctop{
-//        & .page-header{
-//            margin-bottom: 39px;
-//        }
         & .card{
                  &:nth-last-child(-n+5){
                      margin-bottom: 0;
