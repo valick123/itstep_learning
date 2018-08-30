@@ -1,0 +1,13 @@
+.catalog-row{
+    display: flex;
+    flex-wrap: wrap;
+    & .main__inner{
+        flex-direction: row;
+        & .page-header{
+            background: url('../img/catalog/man-page-header.png') no-repeat center;
+        }
+        & .card{
+            height: 230px;
+        }
+    }
+}

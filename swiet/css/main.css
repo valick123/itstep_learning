@@ -2705,10 +2705,12 @@ template {
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
-html .site, body .site {
+html .site,
+body .site {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2722,13 +2724,15 @@ html .site, body .site {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-html .site .main, body .site .main {
+html .site .main,
+body .site .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   z-index: 2;
 }
-html .site .main__inner, body .site .main__inner {
+html .site .main__inner,
+body .site .main__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2736,7 +2740,8 @@ html .site .main__inner, body .site .main__inner {
   padding: 39px 0 100px 0;
 }
 @media (max-width: 766px) {
-  html .main__inner, body .main__inner {
+  html .main__inner,
+  body .main__inner {
     padding: 25px 0 40px 0;
   }
 }
@@ -3303,6 +3308,7 @@ body {
   background-color: #fff;
   border-top: none;
   height: 100%;
+  width: 100%;
 }
 .card__body .content-part {
   display: -webkit-box;
@@ -3379,6 +3385,59 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-family: "Panton SemiBold",sans-serif;
+}
+.card__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card__form select {
+  padding: 5px;
+  border: 1px solid #ebebeb;
+  margin-bottom: 10px;
+}
+.card__form select:last-child {
+  margin-bottom: 0;
+}
+.card__form .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card__form .like label {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.card__form .like input {
+  width: 0;
+  height: 0;
+  position: relative;
+  visibility: hidden;
+}
+.card__form .like input::before {
+  visibility: visible;
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: -25px;
+  background: url("../../img/cards/forms/like-ico.png") no-repeat center;
+}
+.card__form .like input:checked::before {
+  background: url("../../img/cards/forms/checked-like-ico.png") no-repeat center;
 }
 @media (min-width: 980px) {
   .card__body {
@@ -3469,6 +3528,52 @@ body {
   margin-bottom: 0;
 }
 
+.card-row {
+  width: 100%;
+}
+.card-row .card__inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.card-row .content-part {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-row .content-part .content-item {
+  margin-right: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-row .content-part .content-item:last-child {
+  margin-right: 0;
+}
+.card-row .content-part .content-item .card__title {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.025em;
+}
+
 .block-header,
 .block-footer {
   display: -webkit-box;
@@ -3529,12 +3634,21 @@ body {
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  min-height: 220px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 39px;
 }
 .page-header .page-title {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.025em;
   margin-bottom: 75px;
+  padding: 0 40px;
 }
 
 .features {
@@ -4314,18 +4428,7 @@ body {
   bottom: 39px;
 }
 .catalog .main__inner .page-header {
-  height: 220px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background: url("../img/catalog/woman-page-header.png") no-repeat center;
-  margin-bottom: 39px;
-}
-.catalog .main__inner .page-header .page-title {
-  padding: 0 40px;
 }
 @media (min-width: 980px) {
   .catalog .card:nth-last-child(-n+5) {
@@ -4341,4 +4444,24 @@ body {
   .catalog .card:nth-last-child(-n+1) {
     margin-bottom: 0;
   }
+}
+
+.catalog-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.catalog-row .main__inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.catalog-row .main__inner .page-header {
+  background: url("../img/catalog/man-page-header.png") no-repeat center;
+}
+.catalog-row .main__inner .card {
+  height: 230px;
 }
